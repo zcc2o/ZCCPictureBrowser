@@ -14,6 +14,10 @@
 		7C0A8E4424B9935C00DD2407 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C0A8E4324B9935C00DD2407 /* Assets.xcassets */; };
 		7C0A8E4724B9935C00DD2407 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C0A8E4524B9935C00DD2407 /* LaunchScreen.storyboard */; };
 		7C0A8E4A24B9935C00DD2407 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C0A8E4924B9935C00DD2407 /* main.m */; };
+		7C0A8E5324BD4EF100DD2407 /* ZCCDragPicBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C0A8E5224BD4EF000DD2407 /* ZCCDragPicBrowserView.m */; };
+		7C0A8E5624BD53BA00DD2407 /* ZCCPicBrowserItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C0A8E5524BD53BA00DD2407 /* ZCCPicBrowserItemCell.m */; };
+		7C0A8E5924BDF37D00DD2407 /* ZCCPicBrowserFlowlayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C0A8E5824BDF37C00DD2407 /* ZCCPicBrowserFlowlayout.m */; };
+		A0283E5156633B2075752C1F /* libPods-ZCCPictureBrowser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D32C9FEB794CAADA8E7B2492 /* libPods-ZCCPictureBrowser.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,16 @@
 		7C0A8E4624B9935C00DD2407 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C0A8E4824B9935C00DD2407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C0A8E4924B9935C00DD2407 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7C0A8E5024BC535500DD2407 /* Base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base.h; sourceTree = "<group>"; };
+		7C0A8E5124BD4EF000DD2407 /* ZCCDragPicBrowserView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCCDragPicBrowserView.h; sourceTree = "<group>"; };
+		7C0A8E5224BD4EF000DD2407 /* ZCCDragPicBrowserView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCCDragPicBrowserView.m; sourceTree = "<group>"; };
+		7C0A8E5424BD53BA00DD2407 /* ZCCPicBrowserItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCCPicBrowserItemCell.h; sourceTree = "<group>"; };
+		7C0A8E5524BD53BA00DD2407 /* ZCCPicBrowserItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCCPicBrowserItemCell.m; sourceTree = "<group>"; };
+		7C0A8E5724BDF37C00DD2407 /* ZCCPicBrowserFlowlayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCCPicBrowserFlowlayout.h; sourceTree = "<group>"; };
+		7C0A8E5824BDF37C00DD2407 /* ZCCPicBrowserFlowlayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCCPicBrowserFlowlayout.m; sourceTree = "<group>"; };
+		9976D53E4307E15815E4258C /* Pods-ZCCPictureBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCCPictureBrowser.release.xcconfig"; path = "Target Support Files/Pods-ZCCPictureBrowser/Pods-ZCCPictureBrowser.release.xcconfig"; sourceTree = "<group>"; };
+		CFA31B19F5DB044F319569F5 /* Pods-ZCCPictureBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCCPictureBrowser.debug.xcconfig"; path = "Target Support Files/Pods-ZCCPictureBrowser/Pods-ZCCPictureBrowser.debug.xcconfig"; sourceTree = "<group>"; };
+		D32C9FEB794CAADA8E7B2492 /* libPods-ZCCPictureBrowser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZCCPictureBrowser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +50,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0283E5156633B2075752C1F /* libPods-ZCCPictureBrowser.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CBB9019B33BF37E33C3D85B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFA31B19F5DB044F319569F5 /* Pods-ZCCPictureBrowser.debug.xcconfig */,
+				9976D53E4307E15815E4258C /* Pods-ZCCPictureBrowser.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7C0A8E2B24B9935700DD2407 = {
 			isa = PBXGroup;
 			children = (
 				7C0A8E3624B9935700DD2407 /* ZCCPictureBrowser */,
 				7C0A8E3524B9935700DD2407 /* Products */,
+				1CBB9019B33BF37E33C3D85B /* Pods */,
+				ABBE129E65DE19C03DA63167 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,8 +98,23 @@
 				7C0A8E4524B9935C00DD2407 /* LaunchScreen.storyboard */,
 				7C0A8E4824B9935C00DD2407 /* Info.plist */,
 				7C0A8E4924B9935C00DD2407 /* main.m */,
+				7C0A8E5024BC535500DD2407 /* Base.h */,
+				7C0A8E5124BD4EF000DD2407 /* ZCCDragPicBrowserView.h */,
+				7C0A8E5224BD4EF000DD2407 /* ZCCDragPicBrowserView.m */,
+				7C0A8E5424BD53BA00DD2407 /* ZCCPicBrowserItemCell.h */,
+				7C0A8E5524BD53BA00DD2407 /* ZCCPicBrowserItemCell.m */,
+				7C0A8E5724BDF37C00DD2407 /* ZCCPicBrowserFlowlayout.h */,
+				7C0A8E5824BDF37C00DD2407 /* ZCCPicBrowserFlowlayout.m */,
 			);
 			path = ZCCPictureBrowser;
+			sourceTree = "<group>";
+		};
+		ABBE129E65DE19C03DA63167 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D32C9FEB794CAADA8E7B2492 /* libPods-ZCCPictureBrowser.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +124,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C0A8E4D24B9935C00DD2407 /* Build configuration list for PBXNativeTarget "ZCCPictureBrowser" */;
 			buildPhases = (
+				8B36567FCC574AE1089F247A /* [CP] Check Pods Manifest.lock */,
 				7C0A8E3024B9935700DD2407 /* Sources */,
 				7C0A8E3124B9935700DD2407 /* Frameworks */,
 				7C0A8E3224B9935700DD2407 /* Resources */,
@@ -141,13 +183,41 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8B36567FCC574AE1089F247A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZCCPictureBrowser-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7C0A8E3024B9935700DD2407 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7C0A8E3F24B9935700DD2407 /* ViewController.m in Sources */,
+				7C0A8E5324BD4EF100DD2407 /* ZCCDragPicBrowserView.m in Sources */,
 				7C0A8E3924B9935700DD2407 /* AppDelegate.m in Sources */,
+				7C0A8E5624BD53BA00DD2407 /* ZCCPicBrowserItemCell.m in Sources */,
+				7C0A8E5924BDF37D00DD2407 /* ZCCPicBrowserFlowlayout.m in Sources */,
 				7C0A8E4A24B9935C00DD2407 /* main.m in Sources */,
 				7C0A8E3C24B9935700DD2407 /* SceneDelegate.m in Sources */,
 			);
@@ -287,33 +357,37 @@
 		};
 		7C0A8E4E24B9935C00DD2407 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFA31B19F5DB044F319569F5 /* Pods-ZCCPictureBrowser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ZCCPictureBrowser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zcc.ZCCPictureBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		7C0A8E4F24B9935C00DD2407 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9976D53E4307E15815E4258C /* Pods-ZCCPictureBrowser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ZCCPictureBrowser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zcc.ZCCPictureBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -1,0 +1,8 @@
+Pods
+Pods/
+Podfile.lock
+.DS_Store
+*.xcworkspace
+*/build/*
+KCipherTextApp.xcworkspace/xcuserdata/laibutech.xcuserdatad/UserInterfaceState.xcuserstate 
+KCipherTextApp.xcworkspace/xcuserdata/laibutech.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist

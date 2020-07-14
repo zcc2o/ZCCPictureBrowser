@@ -1,0 +1,3 @@
+target 'ZCCPictureBrowser' do
+	pod 'SDWebImage'
+end

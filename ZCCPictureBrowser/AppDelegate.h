@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Base.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
+#ifdef SystemGreater13
+@property (strong, nonatomic) UIWindow *window;
+#endif
 
 @end
 

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,9 +17,47 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    if (@available(iOS 13.0, *)) {
+        
+    } else {
+        self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        [self.window setBackgroundColor:[UIColor whiteColor]];
+        ViewController *vc = [[ViewController alloc] init];
+        self.window.rootViewController = vc;
+        [self.window makeKeyAndVisible];
+    }
     return YES;
 }
 
+
+#pragma mark - 兼容iOS13之前的版本
+- (void)applicationWillResignActive:(UIApplication *)application
+{
+    
+}
+
+- (void)applicationDidEnterBackground:(UIApplication *)application
+{
+    
+    
+}
+
+- (void)applicationWillEnterForeground:(UIApplication *)application
+{
+    
+}
+
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+    
+    
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application
+{
+    
+    
+}
 
 #pragma mark - UISceneSession lifecycle
 
